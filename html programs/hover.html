@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container  
+{
+  position: relative;
+  width: 50%;
+}
+h1 
+{
+    background-color:white;
+    position: relative;
+    cursor: pointer;
+    text-align: start; 
+    font-size: 4vh;
+    color:#3d7508c3;
+    font-style: bold;  
+}
+h1::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 50%;
+    left: 0;
+    background-color: black;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+h1:hover::after{
+    transform: scaleX(1);
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color: #d6d307;
+  color: white;
+  font-size: 24px;
+  padding: 16px 32px;
+}
+button{
+  background-color: #d6d307;
+  color: white;
+  font-size: 24px;
+  padding: 16px 32px;
+} 
+table , th , td{
+            border: 5px solid rgb(60, 44, 5);
+            font-size: larger;
+            color: rgb(207, 10, 10);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 700;
+            font-style: italic;
+}
+</style>
+</head>
+<body>
+
+    <h1 id="title">  
+        Tribute to the  Sunil Chhetri - Indian Professional Footballer 
+</h1> 
+<button>Achievement</button>
+
+
+<div class="container">
+  <img src="sunil.jpg" alt="Avatar" class="image" style="width:100%">
+  <div class="middle">
+    <div class="text">sunil chhetri</div>
+  </div>
+</div>
+<table>
+    <tr> 
+        <th> Serial No</th>
+        <th> Year</th>
+        <th> Achievement</th>
+    </tr>
+    <tr> 
+        <td> 1 .</td>
+        <td> 2007, 2011, 2013, 2014, 2017, 2018-19 and 2021-22 </td>
+        <td> Chhetri has also been named AIFF Player of the Year a record seven times </td>
+    </tr>
+    <tr> 
+        <td> 2 .</td>
+        <td>  2007, 2009, and 2012 </td>
+        <td> Chhetri helped India win the Nehru Cup </td>
+    </tr>
+    <tr> 
+        <td> 3 .</td>
+        <td> 2011, 2015, 2021 and 2023 </td>
+        <td> SAFF Championship </td>
+    </tr>
+    <tr> 
+        <td> 4 .</td>
+        <td>  2002</td>
+        <td> Chhetri began his professional career at Mohun Bagan </td>
+    </tr>
+    
+    <tr> 
+        <td> 5 .</td>
+        <td> 2011 </td>
+        <td>Chhetri received the Arjuna Award for his outstanding sporting achievement </td>
+    </tr>
+    <tr> 
+        <td> 6 .</td>
+        <td> 2019 </td>
+        <td> Chhetri received the Padma Shri award </td>
+    </tr>
+    <tr> 
+        <td> 7 .</td>
+        <td> 2011 </td>
+        <td> scoring twice in the final tournament </td>
+
+    </tr>
+    <tr> 
+        <td> 8 .</td>
+        <td> 2008  </td>
+        <td> He also led India to victory in the AFC Challenge Cup, which qualified them to their first AFC Asian Cup in 27 years,
+    </td>
+
+    </tr>
+    <tr> 
+        <td> 9 .</td>
+        <td>  2021 </td>
+        <td> he received the Khel Ratna Award, India's highest sporting honor and became the first footballer to receive the award. </td>
+  
+    </table>
+  
+</body>
+</html>
